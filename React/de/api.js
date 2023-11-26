@@ -2,7 +2,7 @@ exports.handler = async (event, context) => {
   if (event.httpMethod === 'GET') {
     try {
       // Process the GET request as needed
-      const data = require('./db.json');
+      const data = require('http://localhost:3000/transactions');
 
       // Return the data as the response
       return {
